@@ -24,7 +24,7 @@ function App() {
     <div className="relative min-h-screen">
       {/* Video Background - always present */}
       <video autoPlay loop muted playsInline className="video-background">
-        <source src="/4k Video - Technology Looped Background - No Copyright Loop Background Video.webm" type="video/webm" />
+        <source src="/background-vid_1080p.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
