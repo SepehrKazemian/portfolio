@@ -24,7 +24,7 @@ function App() {
     <div className="relative min-h-screen">
       {/* Video Background - always present */}
       <video autoPlay loop muted playsInline className="video-background">
-        <source src="/background-vid_1080p.mp4" type="video/mp4" />
+        <source src="/portfolio/background-vid_1080p.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -36,7 +36,7 @@ function App() {
         // Add onClick handler to this container to go back
         <div
           onClick={handleGoBack} // Add click handler to go back
-          className="relative z-10 max-w-6xl mx-auto my-12 p-8 md:p-12 bg-white rounded-lg shadow-xl border border-gray-200 cursor-pointer bg-gray-500" // Added cursor-pointer
+            className="relative z-10 max-w-6xl mx-auto my-12 p-8 md:p-12 rounded-lg shadow-xl border border-gray-200 cursor-pointer bg-gray-500" // Added cursor-pointer
         >
           <Projects />
         </div>

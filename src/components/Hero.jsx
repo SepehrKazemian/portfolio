@@ -47,7 +47,7 @@ const Hero = ({ onEnterClick }) => {
 
         {/* Image: Correct size and margin */}
         <div className="w-64 h-64 md:w-96 md:h-96 rounded-md mx-auto bg-gray-200 border border-gray-300 flex items-center justify-center overflow-hidden mb-8">
-          <img src="/ghibli_image.png" alt="Profile" className="w-full h-full object-cover" />
+          <img src="/portfolio/ghibli_image.png" alt="Profile" className="w-full h-full object-cover" />
         </div>
 
         {/* Links Section */}

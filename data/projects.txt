@@ -1,3 +1,25 @@
+
+<h1>Semantic Resume Tailor | https://github.com/SepehrKazemian/cv_tailor</h1> 
+This project focuses on enhancing how a candidate's resume presents their skills for specific job applications. The system automatically tailors the resume’s skills section by analyzing both the candidate’s background and the requirements listed in a particular job posting. By intelligently highlighting the most relevant qualifications, it increases the chances of standing out to recruiters and hiring managers.
+
+Behind the scenes, the system leverages a dynamic knowledge graph architecture built with Neo4j, organizing skills hierarchically across three layers: specific competencies, broader categories, and overarching domains. A retrieval-augmented generation (RAG) approach is used to parse and enrich skill information, combining traditional fuzzy matching with advanced embedding models and LLM-powered standardization agents. Skills from both the candidate’s profile and the job description are extracted and canonically aligned using techniques like semantic search, vector similarity, and AI-driven naming tools to ensure consistent, professional terminology across diverse sources.
+
+To personalize the resume, the system employs intelligent agent flows that score and reason over the structured skill graph. Match relevance is calculated not only at the granular skill level but also cascaded upwards through categories and domains, allowing a more strategic view of a candidate’s fit for a role. Using insights from this LLM-augmented graph reasoning, the system dynamically assembles a tailored skills section, optimizing the resume’s impact with high-precision, role-specific qualifications.
+
+
+<h1> Book2Audio Voice Cloning | https://github.com/SepehrKazemian/book_2_audio</h1> 
+This project transforms traditional PDF books into fully narrated audiobooks through an automated, AI-powered pipeline. It intelligently extracts text, corrects errors and formatting inconsistencies, and generates natural, speaker-consistent audio. From a simple PDF, the system produces a polished audiobook experience with minimal manual intervention.
+
+The pipeline integrates advanced AI techniques across multiple stages. Text extraction combines precise parsing with OCR fallback for scanned files, while a fine-tuned StableLM-Zephyr-3B model, enhanced with Low-Rank Adaptation (LoRA), corrects spelling, structure, and OCR-related noise. A custom training set, derived from augmented Wikipedia content, allows the model to specialize in domain-specific text cleaning. Audiobook synthesis is powered by Coqui TTS’s XTTSv2 model, producing high-fidelity narration efficiently through GPU-parallelization. Quality assurance uses both fuzzy matching and semantic similarity via embedding models to validate alignment with the original content.
+
+The system architecture follows best-in-class software practices. Each stage of the pipeline — extraction, cleaning, correction, and synthesis — is modularized for maintainability and scalability. Error handling, structured logging, and type safety are embedded throughout. Configuration management abstracts runtime parameters for flexible deployments. Built using leading ML and AI frameworks, the project ensures a robust, reproducible workflow, ready to scale from individual users to production environments.
+
+<h1> Realtime Raspberry PI MAANG Scraper | https://github.com/SepehrKazemian/MAANG_scraper_pi</h1>
+I built a fully automated job monitoring system that continuously tracks new job postings from companies like Meta, Microsoft, Google, and DeepMind. The system runs independently on a Raspberry Pi, leveraging dynamic web scraping and API access to capture postings in real-time and deliver notifications via Telegram. Designed for reliability and low-maintenance operation, it combines robustness with lightweight deployment, ensuring consistent visibility into new opportunities without manual searching.
+
+From an engineering perspective, this project showcases full-stack automation skills relevant to AI infrastructure work. I implemented asynchronous scraping pipelines using pyppeteer and API integrations, incorporating TOR network handling, browser lifecycle management, and fault-tolerant pagination scraping. To ensure resilience, I engineered process supervision with PID tracking, error isolation, and auto-recovery strategies. Although no AI models were involved, the system demonstrates critical backend skills for building reliable, real-world pipelines — skills directly transferable to maintaining production ML workflows, such as managing inference jobs, data collection streams, and low-footprint cloud or edge deployments.
+
+
 <h1>LLM RAG Pipeline</h1> 
 <h3>Use Case</h3> 
 This project involved building a production-grade Retrieval-Augmented Generation (RAG) system for insurance document summarization and intelligent question answering. It was designed to support real-time and batch inference using modular components deployed across a cloud-native architecture.
